@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<p id="hello">Hello world!</p>
+<h2 id="if"></h2>
+<h2 id="else"></h2>
+<button id="heelos">Click me</button>
+
+<p id="twitdiv"></p>
+<script type="text/javascript">
+	document.getElementById("heelos").onclick = function(){
+	document.getElementById("hello").innerHTML = "world!"	
+	}
+
+	var arrays = ['hello', 'festival'];
+	arrays.push('datas');
+	arrays.splice(1,0, 'mode');
+	console.log(arrays);
+
+
+	var x = 0;
+
+	if(x == 1){
+		document.getElementById("if").innerHTML = "if condition is working";
+	}
+	else{
+		document.getElementById("else").innerHTML = "else condition is working";
+	}
+
+	for(i = 0; i<=5; i++){
+		alert([i]);
+	}
+
+	var twitsstring = "";
+	var twits = ['tea' , 'coffee' , 'badam' , 'safola'];
+
+	for ( var i=0; i< twits.length; i++){
+		twitsstring = twitsstring + "<p>" + twits[i] + "</p>";
+	}
+	document.getElementById("twitdiv").innerHTML = twitsstring;
+</script>
+</body>
+</html>
